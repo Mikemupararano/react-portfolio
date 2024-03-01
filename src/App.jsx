@@ -6,10 +6,7 @@ import './App.css'
   /* The following line can be included in your src/index.js or App.js file */
 }
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'react-bootstrap'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Button , Navbar , Container , Nav} from 'react-bootstrap'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +20,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+      
       <h1>Portfolio</h1>
       <Button variant="primary">Primary</Button>{' '}
        <Button variant="success">Success</Button>
