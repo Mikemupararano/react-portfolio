@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.css'
 {
   /* The following line can be included in your src/index.js or App.js file */
 }
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div>
+      /*<div>
        <nav>
         <Navbar expand="lg" className="bg-primary" data-bs-theme="dark">
         <Container>
@@ -26,14 +26,8 @@ function App() {
      </nav>
       </div>
       
-      <h1>Portfolio</h1>
-      
-      <div className="card">
-        
-        <p>
-          Hi, I am Mike, a web developer!
-        </p>
-      </div>
+      <h1 className={styles.App}>Portfolio</h1>
+           
       
     </>
   )
