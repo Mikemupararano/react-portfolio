@@ -1,6 +1,7 @@
 # Professional-portfolio
 ## Description
 I have spent a good amount of hours setting a responsive portfolio.I transformed Figma designs into code to make this a customized and fully responsive portfolio. I have used react, Node Js, bootstrap, HTML and CSS to make the project.  
+The figma design that has shaped this portfolio in line with modern trends in tech companies, has one standard view of the web page and another one for the mobile responsive page.
 
  
 ## Table of Contents

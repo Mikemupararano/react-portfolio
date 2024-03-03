@@ -1,36 +1,27 @@
-import { useState } from 'react'
-import styles from './App.module.css'
-{
-  /* The following line can be included in your src/index.js or App.js file */
-}
+import { useState } from 'react';
+import styles from './App.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Navbar, Container, Nav } from 'react-bootstrap';
-
+import Navbar from "./components/Navbar/Navbar";
+import Home from './pages/Home';
+import {BrowserRouter as Router, RouterProvider, Switch  } from "react-router-dom";
 function App() {
-  
-
   return (
     <>
-      /*<div>
-       <nav>
-        <Navbar expand="lg" className="bg-primary" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-     </nav>
-      </div>
-      
-      <h1 className={styles.App}>Portfolio</h1>
-           
-      
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            
+          </Switch>
+        </Router>
+        
+        
+        
+</div>  
     </>
+     
   )
+ 
 }
-
-export default App
+export default App;
