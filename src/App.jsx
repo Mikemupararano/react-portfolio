@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import styles from './App.module.css';
+import styles from './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import Home from './pages/Home';
