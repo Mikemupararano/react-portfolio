@@ -1,0 +1,59 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: #001f54;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Added to evenly distribute left and right sides */
+  align-items: center; /* Center vertically */
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+.leftSide {
+  flex: 1; /* Takes up 50% of the available space */
+  display: flex;
+  align-items: center;
+}
+
+.leftSide h1 {
+  margin: 0; /* Remove default margin */
+  color: white; /* Set text color */
+  font-size: 24px; /* Adjust font size */
+}
+
+.rightSide {
+  flex: 1; /* Takes up 50% of the available space */
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+}
+
+.rightSide a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px; /* Add left margin for spacing between links */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px; /* Add left margin for spacing between button and links */
+}
+
+@media only screen and (max-width: 900px) {
+  .rightSide a {
+    display: none; /* Hide links on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .leftSide h1 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .rightSide button {
+    margin-left: 0; /* Remove left margin for button on smaller screens */
+  }
+}
