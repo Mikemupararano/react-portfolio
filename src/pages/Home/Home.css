@@ -96,3 +96,9 @@
     color: #121619;
   }
 }
+.home-page {
+  background-image: url('path/to/your/image.jpg');
+  background-size: cover; /* Adjust this as needed */
+  background-repeat: no-repeat; /* Adjust this as needed */
+  /* Add any other background properties as needed */
+}

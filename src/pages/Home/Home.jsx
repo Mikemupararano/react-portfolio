@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div>
       <h1>Your Name</h1>
-      <img src="headshot.jpg" alt="Your headshot" />
+      <img src="path/to/your/headhsot.png" alt="Your headshot" />
       <p>Your brand statement</p>
       <p>This is your portfolio site</p>
     </div>
