@@ -1,10 +1,14 @@
 /* Footer.css */
 
 .footer {
-  background-color: #800065;
+  background-color: #001f54;
   padding: 20px;
   text-align: center;
-  }
+  color: aqua;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
 .socialMedia {
   margin-bottom: 20px;
