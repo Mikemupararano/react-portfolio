@@ -1,16 +1,20 @@
 /* Footer.css */
 
 .footer {
-  background-color: #f8f9fa;
+  background-color: #800065;
   padding: 20px;
   text-align: center;
-}
+  }
 
 .socialMedia {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+color:aqua;
 }
 
 .footer p {
   margin: 0;
-  color: #6c757d;
+  color: aqua;
 }

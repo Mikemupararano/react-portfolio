@@ -1,17 +1,17 @@
-// src/data/projects.json
+import './Contact.css'
+import React from 'react';
 
-[
-  {
-    "title": "Project 1",
-    "deployedLink": "https://example.com",
-    "githubLink": "https://github.com/example/project1",
-    "image": "project1.gif"
-  },
-  {
-    "title": "Project 2",
-    "deployedLink": "https://example.com",
-    "githubLink": "https://github.com/example/project2",
-    "image": "project2.gif"
-  },
-  // Add more projects as needed
-]
+function ContactPage() {
+  return (
+    <div>
+      <h2>Contact</h2>
+      <p>Email address</p>
+      <p>Link to PDF version of your CV</p>
+      <p>Link to GitHub profile</p>
+      <p>Link to LinkedIn page</p>
+      {/* Contact form */}
+    </div>
+  );
+}
+
+export default ContactPage;
