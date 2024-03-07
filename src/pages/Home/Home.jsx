@@ -8,7 +8,6 @@ function HomePage() {
       <div className="headerContainer">
         <p className="home-description">Hi, I am Mike, I am a web developer!</p>
         
-        
       </div>
       
     </div>
