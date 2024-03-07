@@ -1,14 +1,15 @@
 import React from 'react';
-import './Home.css'; // Importing the CSS module
 import { Link } from "react-router-dom";
-
+import mike from './home-images/mike.jpg'
+import './Home.css'; // Importing the CSS module
 function HomePage() {
   return (
     <div className="home">
       <div className="headerContainer">
-        <p className="home-description">Hi, I am Mike, I am a web developer!</p>
+        <img src={mike} alt="Mike's photo." />
+        <p className="home-description lead">Hi, I am Mike Thomas! I am a web developer.</p>
         
-      </div>
+              </div>
       
     </div>
   );
