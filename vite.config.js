@@ -12,5 +12,5 @@ export default defineConfig({
       localsConvention:"camelCase"
     }
   }, 
-  base:"/mike/"
+  base:"/react-portfolio/"
 })
