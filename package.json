@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mikemupararano.github.io/professional-portfolio/",
+  "homepage": "https://mikemupararano.github.io/mike/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

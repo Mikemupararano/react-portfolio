@@ -12,5 +12,5 @@ export default defineConfig({
       localsConvention:"camelCase"
     }
   }, 
-  base:"/professional-portfolio/"
+  base:"/mike/"
 })
