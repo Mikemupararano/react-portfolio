@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import mike from './home-images/mike.jpg'
+import mike from './home-images/mike.jpeg'
 import './Home.css'; // Importing the CSS module
 function HomePage() {
   return (

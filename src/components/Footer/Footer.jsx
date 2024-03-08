@@ -2,19 +2,20 @@
 import './Footer.css'; // Importing the CSS module
 // import InstagramIcon from '@mui/icons-material/Instagram';
 /*import InstagramIcon from '@material-ui/icons/Instagram';*/
-// import TwitterIcon from '@material-ui/icons/Twitter';
+import TwitterIcon from '@material-ui/icons/Twitter';
 // import FacebookIcon from '@material-ui/icons/Facebook';
-// import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook'
 const Footer = () => {
   return (
     <div className="footer">
       <div className="socialMedia">
         {/* Render Material-UI icons */}
          <InstagramIcon /> 
-        {/* <TwitterIcon /> */}
-        {/* <FacebookIcon /> */}
-        {/* <LinkedInIcon /> */}
+        <TwitterIcon /> 
+         <FacebookIcon /> 
+        <LinkedInIcon /> 
       </div>
       <p>&copy; 2024 MT Designs</p>
     </div>
