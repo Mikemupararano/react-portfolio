@@ -1,0 +1,9 @@
+/* Projects.css */
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100%;
+}
