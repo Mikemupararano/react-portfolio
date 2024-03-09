@@ -2,8 +2,9 @@
 import './Footer.css'; // Importing the CSS module
 // import InstagramIcon from '@mui/icons-material/Instagram';
 /*import InstagramIcon from '@material-ui/icons/Instagram';*/
-import TwitterIcon from '@material-ui/icons/Twitter';
+// import TwitterIcon from '@material-ui/icons/Twitter';
 // import FacebookIcon from '@material-ui/icons/Facebook';
+import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook'
@@ -13,7 +14,8 @@ const Footer = () => {
       <div className="socialMedia">
         {/* Render Material-UI icons */}
          <InstagramIcon /> 
-        <TwitterIcon /> 
+        {/* <TwitterIcon />  */}
+        <XIcon />
          <FacebookIcon /> 
         <LinkedInIcon /> 
       </div>
