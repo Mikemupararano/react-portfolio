@@ -4,8 +4,9 @@ import profileImage from "./about-images/mike.jpeg"
 import "./About.css";
 function About() {
   return (
-  <div className="container bg-primary text-white">
-    <div className="about">
+    <div className="container bg-primary text-white">
+      {/* <div className="col-12-md"> */}
+<div className="about">
       <div className="about-content">
         <h2>About Me</h2>
         <div className="about-text">
@@ -53,6 +54,9 @@ function About() {
         </div>
       </div>
     </div>  
+      {/* </div> */}
+
+    
   </div>
     
   );

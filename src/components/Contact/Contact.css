@@ -1,80 +1,97 @@
-.contact {
-  width: 100%;
-  height: 90vh;
+.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.contact .leftSide {
-  height: 100%;
-  flex: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.contact .rightSide {
-  height: 100%;
-  flex: 50%;
+.contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.contact .rightSide h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-weight: 10;
-  font-size: 50px;
-  margin-left: 30px;
+.leftSide {
+  /* Styles for the left side (optional) */
+}
+
+.rightSide {
+  padding-left: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  height: auto;
-  padding: 30px;
+  margin-bottom: 20px;
 }
 
-form input {
-  height: 40px;
-  width: 80%;
-  border: none;
-  border-bottom: 1px solid #121619;
-  color: black;
-}
-
-form textarea {
-  margin-top: 15px;
-  height: 70px;
-  width: 80%;
-  border: none;
-  border-bottom: 1px solid #121619;
-  color: black;
-}
-input::placeholder,
-textarea::placeholder {
+label {
   font-weight: bold;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-}
-form input:focus,
-textarea:focus {
-  outline: none;
 }
 
-form label {
-  margin-top: 15px;
-  color: grey;
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
 }
 
-form button {
-  margin-top: 40px;
-  width: 140px;
-  height: 40px;
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  background-color: #121619;
-  color: whitesmoke;
-  font-size: 15px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.additional-info p {
+  margin-bottom: 10px;
+}
+
+.additional-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .rightSide {
+    padding-left: 0;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  input,
+  textarea,
+  button {
+    width: calc(100% - 40px); /* Adjust the width */
+  }
 }
