@@ -1,5 +1,5 @@
 import React from 'react';
-import projectsData from '..//Projects/Projects'; // Import project data
+import projectsData from './Projects'; // Import project data
 import './Projects.css'; // Import CSS for projects styling
 
 function ProjectsPage() {
