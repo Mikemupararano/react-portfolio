@@ -2,7 +2,7 @@ import './Contact.css';
 import React from 'react';
 function ContactPage() {
   return (
-    <div className="container">
+    <div className="container bg-info">
       <div className="contact">
         <div className="leftSide">
           {/* Left side content (optional) */}
