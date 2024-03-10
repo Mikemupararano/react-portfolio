@@ -1,12 +1,10 @@
 import './Contact.css';
 import React from 'react';
+
 function ContactPage() {
   return (
-    <div className="container bg-info text-white">
+    <div className="contact-container">
       <div className="contact">
-        <div className="leftSide">
-          {/* Left side content (optional) */}
-        </div>
         <div className="topSide bg-primary">
           <h1>Contact Me</h1>
           <form id="contact-form" method="POST">
@@ -40,10 +38,8 @@ function ContactPage() {
                 Link to LinkedIn page
               </a>
             </p>
-             <p>
-        &copy; 2024 MT Designs | Email: {' '}
-        <a href="mailto:kudath@yahoo.co.uk">kudath@yahoo.co.uk</a>
-      </p>
+            <p> <a href="mailto:kudath@yahoo.co.uk">kudath@yahoo.co.uk</a>
+            </p>
           </div>
         </div>
       </div>
