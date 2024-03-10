@@ -22,3 +22,8 @@ color:aqua;
   margin: 0;
   color: aqua;
 }
+a { 
+  display: flex;
+  justify-content: space-evenly;
+  color: aqua;
+}

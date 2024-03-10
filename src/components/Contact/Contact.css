@@ -19,8 +19,9 @@
   /* Styles for the left side (optional) */
 }
 
-.rightSide {
+.topSide {
   padding-left: 20px;
+  
 }
 
 h1 {
@@ -64,10 +65,11 @@ button:hover {
 
 .additional-info p {
   margin-bottom: 10px;
+  color: white;
 }
 
 .additional-info a {
-  color: #007bff;
+  color: white;
   text-decoration: none;
 }
 

@@ -2,12 +2,12 @@ import './Contact.css';
 import React from 'react';
 function ContactPage() {
   return (
-    <div className="container bg-info">
+    <div className="container bg-info text-white">
       <div className="contact">
         <div className="leftSide">
           {/* Left side content (optional) */}
         </div>
-        <div className="rightSide">
+        <div className="topSide bg-primary">
           <h1>Contact Me</h1>
           <form id="contact-form" method="POST">
             <label htmlFor="name">Full Name</label>
@@ -27,7 +27,7 @@ function ContactPage() {
             {/* Additional information */}
             <p>
               <a href="./CV/Mike Thomas Data Science & Web Development CV 2024.pdf" download>
-                Link to PDF version of your CV
+                Link to PDF version of my CV
               </a>
             </p>
             <p>
@@ -40,6 +40,10 @@ function ContactPage() {
                 Link to LinkedIn page
               </a>
             </p>
+             <p>
+        &copy; 2024 MT Designs | Email: {' '}
+        <a href="mailto:kudath@yahoo.co.uk">kudath@yahoo.co.uk</a>
+      </p>
           </div>
         </div>
       </div>
