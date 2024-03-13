@@ -9,11 +9,12 @@ function ContactPage() {
           <h1>Contact Me</h1>
           <form id="contact-form" method="POST">
             <label htmlFor="name">Full Name</label>
-            <input name="name" placeholder="Enter full name..." type="text" />
+            <input id="name" name="name" placeholder="Enter full name..." type="text" />
             <label htmlFor="email">Email</label>
-            <input name="email" placeholder="Enter email..." type="email" />
+            <input id="email" name="email" placeholder="Enter email..." type="email" />
             <label htmlFor="message">Message</label>
             <textarea
+              id="message"
               rows="6"
               placeholder="Enter message..."
               name="message"

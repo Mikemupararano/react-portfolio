@@ -1,21 +1,26 @@
 import React from 'react';
-import projectsData from './Projects'; // Import project data
+import ProjectList from "../components/ProjectList"; // Import project data
+import ProjectItem from '../components/ProjectItem';
 import './Projects.css'; // Import CSS for projects styling
 
-function ProjectsPage() {
+function Projects() {
   return (
-    <div>
-      <h2>Projects</h2>
-      {projectsData.map((project, index) => (
-        <div className="project" key={index}>
-          <h3>{project.title}</h3>
-          <p><a href={project.deployedLink}>Deployed Version</a></p>
-          <p><a href={project.githubLink}>GitHub Repository</a></p>
-          <img src={project.image} alt={project.title} />
-        </div>
-      ))}
+    <div className="projects">
+      <h1 className="projectTitle">My Projects</h1>
+      <div className="projectList">
+        {ProjectList.map((projectItem, key) => {
+          return (
+            <ProjectItem
+              key={key}
+              image={projectItem.image}
+              name={projectItem.name}
+              description={projectItem.description} // Use description instead of price
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
 
-export default ProjectsPage;
+export default Projects;

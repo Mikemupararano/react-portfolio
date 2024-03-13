@@ -5,7 +5,7 @@ import Home from './pages/Home/Home';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import ContactPage from './components/Contact/Contact';
-import Projects from './data/Projects/';
+import Projects from './components/Projects/Projects';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

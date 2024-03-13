@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div className="about-container bg-primary text-white">
+    <div className="about-container bg-primary">
       <div className="about-content">
         <h2>About Me</h2>
         <div className="about-text">
