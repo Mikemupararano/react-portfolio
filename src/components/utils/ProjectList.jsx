@@ -10,41 +10,41 @@ export const ProjectList = [
   {
     name: "Weather Dashboard",
     image: WeatherDashboard,
-    description: "HTML, CSS, Javascript, API",
+    text: "HTML, CSS, Javascript, API",
   },
   {
     name: "Online School",
     image: School,
-    description: "HTML, CSS, JavaScript, Bootstrap",
+    text: "HTML, CSS, JavaScript, Bootstrap",
   },
   {
     name: "Bootstrap Portfolio",
     image: BootstrapPortfolio,
-    description: "Bootstrap",
+    text: "Bootstrap",
   },
   {
     name: "Calendar Events Scheduler",
     image: CalendarEvents,
-    description: "Javascript",
+    text: "Javascript",
   },
   {
     name: "Search Photo API",
     image: SearchPhoto,
-    description: "JavaScript, Nodejs",
+    text: "JavaScript, Nodejs",
   },
   {
     name: "Team Profile Generator",
     image: TeamProfile,
-    description: "CSS, Javascript, Nodejs",
+    text: "CSS, Javascript, Nodejs",
   },
 ];
 
-function ProjectItem({ image, name, description }) {
+function ProjectItem({ image, name, text }) {
   return (
     <div className="projectItem">
       <div style={{ backgroundImage: `url(${image})` }}> </div>
       <h1> {name} </h1>
-      <p> {description} </p>
+      <p> {text} </p>
     </div>
   );
 }

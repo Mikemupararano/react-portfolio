@@ -14,7 +14,7 @@ function Projects() { // Defining a functional component called Projects
               key={key} // Assigning a unique key to each ProjectItem component
               image={projectItem.image} // Passing image prop to ProjectItem component
               name={projectItem.name} // Passing name prop to ProjectItem component
-              description={projectItem.price} // Passing description prop to ProjectItem component
+              text={projectItem.text} // Passing description prop to ProjectItem component
             />
           );
         })}
