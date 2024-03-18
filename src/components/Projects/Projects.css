@@ -13,6 +13,25 @@
   margin-bottom: 20px;
 }
 
+/* Projects.css */
+
+.projectItem > div {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.projectItem:hover > div {
+  transform: scale(1.05); /* Enlarge the image on hover */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Add more prominent shadow on hover */
+}
+
 .projectTitle {
   display: flex;
   justify-content: center;
