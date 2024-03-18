@@ -1,12 +1,44 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  padding: 20px; /* Adjust padding for the contact container */
+  max-width: 800px; /* Adjust max-width for better fit on smaller screens */
+  width: 100%;
+}
+
+.topSide {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5rem; /* Increase font size for better readability */
+  margin-bottom: 20px; /* Adjust margin to prevent overlap */
+}
+
+input,
+textarea,
+button {
+  width: 100%; /* Make input fields and button full width */
+  margin-bottom: 20px; /* Add margin bottom to separate elements */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of textarea */
+}
+
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .contact {
     padding: 10px; /* Adjust padding for the contact container */
     max-width: 90%; /* Adjust max-width for better fit on smaller screens */
   }
-div > .contact-me {
-  color: white;
-}
+
   .topSide {
     padding: 10px;
   }
@@ -14,13 +46,5 @@ div > .contact-me {
   h1 {
     font-size: 1.2rem;
     margin-bottom: 10px; /* Adjust margin to prevent overlap */
-    
-  }
-
-  input,
-  textarea,
-  button {
-    width: 100%; /* Make input fields and button full width */
-    margin-bottom: 10px; /* Add margin bottom to separate elements */
   }
 }
