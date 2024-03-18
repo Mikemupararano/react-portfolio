@@ -1,6 +1,6 @@
 /* General styles */
 .about-container {
-  min-height: calc(100vh - 40px); /* Adjust as per navbar and footer height */
+  min-height: calc(120vh - 20px); /* Adjust as per navbar and footer height */
   display: flex;
   justify-content: center;
   align-items: center;
