@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import './Navbar.css'
 function Navbar() {
@@ -22,9 +22,9 @@ function Navbar() {
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         {/* Conditionally render MenuIcon or CloseIcon based on openLinks state */}
-        <button className="menuIconBtn" onClick={toggleNavbar}>
-          {openLinks ? <CloseIcon /> : <MenuIcon />}
-        </button>
+        {/* <button className="menuIconBtn" onClick={toggleNavbar}> */}
+          {/* {openLinks ? <CloseIcon /> : <MenuIcon />} */}
+        {/* </button> */}
       </div>
     </div>
   );
