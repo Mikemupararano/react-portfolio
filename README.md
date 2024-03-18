@@ -1,6 +1,7 @@
 # Professional-portfolio
 ## Description
-I have spent a good amount of hours setting a responsive portfolio.I transformed Figma designs into code to make this a customized and fully responsive portfolio. I have used react, Node Js, bootstrap, HTML and CSS to make the project.  
+I have spent a good amount of hours setting a responsive portfolio using react js.I transformed a Figma design into code to make this a customized and fully responsive portfolio. I have used react, Node Js, bootstrap, HTML and CSS to make the project.  
+
 The figma design that has shaped this portfolio in line with modern trends in tech companies, has one standard view of the web page and another one for the mobile responsive page.
 
  
@@ -17,40 +18,41 @@ The figma design that has shaped this portfolio in line with modern trends in te
   - [Questions](#questions)
 
 ## Installation
-The user is advised to have downloaded and installed node.js from here: https://nodejs.org/en/download/
-•	$ npm install
-•	$ npm init-y
-•	Npm install node.js
+The user is advised to have downloaded and installed node.js from here: 
+N/A
 
 
 ## Usage
-When a user starts the application in the command line terminal (e.g node index.js), they're prompted to enter the team manager's: (1) Name, 
-•	The application can be found on this repository link:
-A screenshot of the app is shown here:https://github.com/Mikemupararano/team-profile-generator
-Screenshot of the test:
-![A screenshot :](./assets/final-test.png)
 
-An image of the user input is shown here:
-![A screenshot :](./assets/final-user-input.png)
-The generated team profile will show in the 'output' folder. Here is the screenshot of the team profile: 
-![A screenshot :](./assets/final-screenshot.png)
+A screenshot of the landing page is shown here:
 
-The genrated html is located here: https://github.com/Mikemupararano/team-profile-generator/blob/main/starter/output/team.html.
+![A screenshot :](./src/assets/landing%20page.png)
+A screenshot of the 'about me' page is shown here:
+
+![A screenshot :](./src/assets/about-page.png)
+
+An image of the projects page is shown here:
+![A screenshot :](./src/assets/projects-page.png)
+The contact page is as follows: 
+![A screenshot :](./src/assets/contact-page.png)
+
+By clicking the link below, the user is taken to the web page where the project is displayed:https://mikemupararano.github.io/react-portfolio/.
+The repository can be accessed using this link: https://github.com/Mikemupararano/react-portfolio.
 
 ## License
 This application is covered under the MIT license.
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ## Contributing
-I have created a branch called 'employee' that I would like users to cone and contribute towards the improvement of this web application. The branch is found on this link: https://github.com/Mikemupararano/team-profile-generator/tree/employee.
+ Any users are welcome to contribute ideas to my repository: https://github.com/Mikemupararano/react-portfolio.
 
 ## Credits
 I researched website and watched several videos to adapt and work out the code in this web application. I used the following web-links for research and support:
-Mike Thomas
-(2) https://javascript.plainenglish.io/how-to-inquirer-js-c10a4e05ef1f
-(3)https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
-(4) https://www.browserstack.com/guide/bootstrap-mobile-responsive
-(5) https://www.youtube.com/watch?v=soKo5LzN12w
-(6) https://www.youtube.com/watch?v=31LhQkLcZvE
+(1) https://github.com/thehyperart11/Restaurant-Landing-Page-Tutorial/blob/main/src/App.css
+(2) https://github.com/TylerPottsDev/yt-react-hirigana-quiz
+(3) https://github.com/Praveenterax/reactjs-portfolio/blob/master/frontend_react/src/containers/Work/Work.jsx
+(4) https://www.youtube.com/watch?v=VY6tgKS02ao
+(5) https://github.com/soumyajit4419/Portfolio/blob/master/src/components/Projects/ProjectCards.js
+(6) https://www.figma.com/proto/tkDs3aeBaqvF47hD063LSH/Untitled?node-id=1-2
 
 ## Tests
 N/A
