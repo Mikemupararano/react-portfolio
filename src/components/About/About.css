@@ -1,3 +1,4 @@
+/* General styles */
 .about-container {
   min-height: calc(100vh - 40px); /* Adjust as per navbar and footer height */
   display: flex;
@@ -6,43 +7,39 @@
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 90%; /* Adjusted width for smaller screens */
   padding: 20px;
   text-align: center;
-  color:white;
-  font-size: 30px;
+  color: white;
 }
 
 .about-content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  display: inline-block;
+  width: 200px;
+ font-size: 2em; /* Adjusted font size for smaller screens */
+ margin-bottom: 20px;
 }
 
 .about-text {
   margin-top: 20px;
-  text-align: left;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  float: left;
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 1.2em; /* Adjusted font size for smaller screens */
 }
 
-/* Image styles */
+/* Profile image styles */
 .profile-image {
   display: flex;
   position: relative;
-  width: 150px;
-  height: 150px;
+  top: 2px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin-right: 20px;
-  top: 20px;
-  float: left;
-  border: 3px solid #fff; /* White border around the image */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  margin-right: 20px; /* Add margin to the right to separate from text */
+  object-fit: cover; /* Ensure the image fills the container */
 }
 
 /* Hover effect for the image */
@@ -51,27 +48,16 @@
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
-.about-text p {
-  margin-bottom: 15px;
-  line-height: 1.5;
-}
-
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .about-content {
     padding: 10px;
   }
 
-  .about-text {
-    text-align: center;
-  }
-
-  .about-text p {
-    text-align: justify; /* Align paragraphs to justify text on smaller screens */
-  }
-
   .profile-image {
-    float: none;
-    margin: 0 auto 20px;
+    width: 100%; /* Make the image responsive by setting width to 100% */
+    max-width: 150px; /* Set maximum width for better appearance on small screens */
+    height: auto; /* Automatically adjust height based on width */
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
   }
 }
