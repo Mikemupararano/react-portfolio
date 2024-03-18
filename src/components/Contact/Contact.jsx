@@ -6,7 +6,7 @@ function ContactPage() {
     <div className="contact-container">
       <div className="contact">
         <div className="topSide bg-primary">
-          <h1>Contact Me</h1>
+          <h1 className="contact-me">Contact Me</h1>
           <form id="contact-form" method="POST">
             <label htmlFor="name">Full Name</label>
             <input id="name" name="name" placeholder="Enter full name..." type="text" />

@@ -1,35 +1,47 @@
+/* Projects.css */
+
+
+
 .projects {
   width: 100%;
-  padding: 20px; /* Add padding for better spacing */
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 0; /* Remove left margin */
+  margin-bottom: 20px;
 }
 
 .projectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: cursive;
-  font-size: 4rem; /* Adjust font size for better readability */
-  margin-bottom: 20px; /* Add margin for separation */
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 20px;
+  background-color: #1d3461;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
 }
 
 .projectList {
-  width: 90%; /* Adjust width for better responsiveness */
-  max-width: 1200px; /* Add max-width to prevent excessive width on large screens */
-  height: auto;
+  width: 100%;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid columns for responsiveness */
-  gap: 20px; /* Add gap between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
   justify-items: center;
 }
 
 .projectItem {
   border-radius: 15px;
-  width: 100%; /* Adjust width for responsiveness */
-  max-width: 300px; /* Add max-width to prevent excessive width */
-  height: auto; /* Change height to auto for content-based height */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease-in-out; /* Move transition property outside hover */
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .projectItem:hover {
@@ -48,18 +60,21 @@
 
 .projectItem h1,
 .projectItem p {
-  margin: 0; /* Reset margin */
-  padding: 10px; /* Add padding for better spacing */
+  margin: 0;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  color: #89023e;
 }
 
-@media only screen and (max-width: 1300px) {
-  .projectList {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid columns for responsiveness */
-  }
+/* Style anchor tags to have no underline */
+.projectList a {
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 800px) {
-  .projectList {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+  .projectTitle {
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
 }

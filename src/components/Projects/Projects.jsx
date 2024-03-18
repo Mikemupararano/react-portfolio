@@ -1,21 +1,22 @@
-import React from "react"; // Importing React library to use JSX
-import { ProjectList } from "../utils/ProjectList"; // Importing ProjectList from a file
-import ProjectItem from "../Projects/ProjectItem"; // Importing ProjectItem component
-import "./Projects.css"; // Importing CSS styles for the Projects component
+import React from "react";
+import { ProjectList } from "../utils/ProjectList";
+import ProjectItem from "../Projects/ProjectItem";
+import "./Projects.css";
 
-function Projects() { // Defining a functional component called Projects
+function Projects() {
   return (
-    <div className="project"> {/* Creating a div element with class name 'project' */}
-      <h1 className="projectTitle">My projects</h1> {/* Creating an h1 element with class name 'projectTitle' */}
-      <div className="projectList"> {/* Creating a div element with class name 'projectList' */}
-        {ProjectList.map((projectItem, key) => { // Mapping through ProjectList array
+    <div className="projects">
+      <h1 className="projectTitle">My Projects</h1>
+      <div className="projectList">
+        {ProjectList.map((projectItem, key) => {
           return (
-            <ProjectItem
-              key={key} // Assigning a unique key to each ProjectItem component
-              image={projectItem.image} // Passing image prop to ProjectItem component
-              name={projectItem.name} // Passing name prop to ProjectItem component
-              text={projectItem.text} // Passing description prop to ProjectItem component
-            />
+            <a key={key} href={projectItem.url} target="_blank" rel="noopener noreferrer">
+              <ProjectItem
+                image={projectItem.image}
+                name={projectItem.name}
+                text={projectItem.text}
+              />
+            </a>
           );
         })}
       </div>
@@ -23,4 +24,4 @@ function Projects() { // Defining a functional component called Projects
   );
 }
 
-export default Projects; // Exporting the Projects component as default
+export default Projects;

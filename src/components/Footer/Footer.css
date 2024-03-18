@@ -2,7 +2,7 @@
 
 .footer {
   background-color: #001f54;
-  padding: 20px;
+  padding: 20px 10px; /* Increase padding for better spacing */
   text-align: center;
   color: aqua;
   position: fixed;
@@ -15,15 +15,31 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-color:aqua;
+  color: aqua;
 }
 
 .footer p {
   margin: 0;
   color: aqua;
 }
-a { 
+
+a {
   display: flex;
   justify-content: space-evenly;
   color: aqua;
+}
+
+/* Mobile responsive styles */
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .footer p {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+  
+  .socialMedia {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
 }
