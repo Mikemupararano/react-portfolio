@@ -26,7 +26,7 @@ N/A
 
 A screenshot of the landing page is shown here:
 
-![A screenshot :](./src/assets/landing%20page.png)
+![A screenshot :](./src/assets/github-landing-page.jpeg)
 A screenshot of the 'about me' page is shown here:
 
 ![A screenshot :](./src/assets/about-page.png)
