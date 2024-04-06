@@ -24,7 +24,7 @@ function ContactPage() {
           <div className="additional-info">
             {/* Additional information */}
             <p>
-              <a href="./CV/Mike Thomas Data Science & Web Development CV 2024.pdf" download>
+              <a href="./CV/Mike Thomas CV.pdf" download>
                 Link to PDF version of my CV
               </a>
             </p>
