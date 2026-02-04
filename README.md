@@ -58,5 +58,4 @@ I researched website and watched several videos to adapt and work out the code i
 N/A
 
 ## Questions
-For any questions or concerns, please contact me at [kudath@yahoo.co.uk](mailto:kudath@yahoo.co.uk).
-You can also find me on GitHub: [https://github.com/Mikemupararano](https://github.com/https://github.com/Mikemupararano)
+For any questions or concerns, please contact me on GitHub: [https://github.com/Mikemupararano](https://github.com/https://github.com/Mikemupararano)
