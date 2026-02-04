@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./Contact.css";
 
 function ContactPage() {
-  const endpoint = import.meta.env.VITE_CONTACT_ENDPOINT || "";
+  const endpoint = "https://formspree.io/f/YOUR_FORM_ID";
+
   const publicEmail = import.meta.env.VITE_PUBLIC_EMAIL || "";
 
   const [form, setForm] = useState({
