@@ -1,50 +1,216 @@
-/* Contact.css */
+:root {
+  --bg: #001f4d;
+  --card: #0b2e6d;
+  --panel: #0f3b8c;
 
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.82);
+  --border: rgba(255, 255, 255, 0.25);
+
+  --accent: #ff6a00;
+}
+
+/* PAGE */
 .contact-container {
+  /* ✅ Allows the page to scroll above a footer (even if footer is fixed) */
+  min-height: calc(100vh - 120px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
+  /* ✅ Top padding for breathing room + extra bottom padding so submit never hides behind footer */
+  padding: 32px 16px 180px;
+
+  background: radial-gradient(circle at top, #0b2e6d, var(--bg));
 }
 
+/* CARD */
 .contact {
-  padding: 20px; /* Adjust padding for the contact container */
-  max-width: 800px; /* Adjust max-width for better fit on smaller screens */
   width: 100%;
+  max-width: 860px;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  padding: 22px;
 }
 
+/* PANEL */
 .topSide {
-  padding: 20px;
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 22px;
+  color: var(--text);
 }
 
-h1 {
-  font-size: 1.5rem; /* Increase font size for better readability */
-  margin-bottom: 20px; /* Adjust margin to prevent overlap */
+/* TITLE */
+.contact-me {
+  margin: 0 0 18px 0;
+  font-size: 2.1rem;
+  text-align: center;
+  color: var(--text);
 }
 
-input,
-textarea,
-button {
-  width: 100%; /* Make input fields and button full width */
-  margin-bottom: 20px; /* Add margin bottom to separate elements */
+/* ✅ INTRO REMOVED: delete from JSX as well */
+.contact-intro {
+  display: none;
 }
 
-textarea {
-  resize: vertical; /* Allow vertical resizing of textarea */
+/* FORM */
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-/* Media Query for smaller screens */
-@media (max-width: 768px) {
+/* FIELD WRAPPER */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field--full {
+  grid-column: 1 / -1;
+}
+
+.field label {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+/* INPUTS */
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 1rem;
+
+  /* ✅ Prevents inputs from growing weirdly in flex/grid */
+  box-sizing: border-box;
+}
+
+.field textarea {
+  /* ✅ Shorter so the button fits on laptop screens */
+  min-height: 120px;
+  max-height: 260px;
+  resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(255, 106, 0, 0.9);
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.22);
+}
+
+/* ✅ HONEYPOT: prevents the “random white box” */
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* BUTTON */
+#contact-form button {
+  grid-column: 1 / -1;
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent);
+  color: #111;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+#contact-form button:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+#contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* STATUS */
+.form-status {
+  grid-column: 1 / -1;
+  min-height: 20px;
+  text-align: center;
+  margin: 0;
+  color: var(--text);
+}
+
+/* LINKS */
+.additional-info {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.additional-info a {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.06);
+  transition: border-color 0.12s ease, color 0.12s ease, background 0.12s ease;
+}
+
+.additional-info a:hover {
+  color: var(--text);
+  border-color: rgba(255, 106, 0, 0.55);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .contact-container {
+    padding: 24px 14px 200px;
+    /* extra bottom space for fixed footer */
+  }
+
+  #contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .field--full,
+  #contact-form button,
+  .form-status {
+    grid-column: 1 / -1;
+  }
+
   .contact {
-    padding: 10px; /* Adjust padding for the contact container */
-    max-width: 90%; /* Adjust max-width for better fit on smaller screens */
+    padding: 16px;
   }
 
   .topSide {
-    padding: 10px;
+    padding: 16px;
   }
 
-  h1 {
-    font-size: 1.2rem;
-    margin-bottom: 10px; /* Adjust margin to prevent overlap */
+  .contact-me {
+    font-size: 1.9rem;
   }
 }
