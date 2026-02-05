@@ -33,8 +33,7 @@ A screenshot of the 'about me' page is shown here:
 
 An image of the projects page is shown here:
 ![A screenshot :](./src/assets/projects-page.png)
-The contact page is as follows: 
-![A screenshot :](./src/assets/contact-page.png)
+
 
 By clicking the link below, the user is taken to the web page where the project is displayed:https://mikemupararano.github.io/react-portfolio/.
 The repository can be accessed using this link: https://github.com/Mikemupararano/react-portfolio.
